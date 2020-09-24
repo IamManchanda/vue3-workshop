@@ -15,7 +15,7 @@
       <label :for="option.value"> {{ option.value }}</label>
     </span>
     <br />
-    <span>Checked data: {{ checkedNames }}</span>
+    <span>Checked names: {{ checkedNames }}</span>
   </div>
 </template>
 

@@ -22,11 +22,11 @@ const routes = [
       ),
   },
   {
-    path: "/checked-data",
-    name: "PageCheckedData",
+    path: "/checked-names",
+    name: "PageCheckedNames",
     component: () =>
       import(
-        /* webpackChunkName: "page-checked-data" */ "../views/checked-data.vue"
+        /* webpackChunkName: "page-checked-names" */ "../views/checked-names.vue"
       ),
   },
   {
