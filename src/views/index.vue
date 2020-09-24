@@ -13,8 +13,8 @@
         </router-link>
       </li>
       <li>
-        <router-link class="text-blue-500 underline" to="/checked-names">
-          Checked Names
+        <router-link class="text-blue-500 underline" to="/checked-data">
+          Checked Data
         </router-link>
       </li>
       <li>

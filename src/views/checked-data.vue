@@ -1,5 +1,5 @@
 <template>
-  <div class="page-checked-names">
+  <div class="page-checked-data">
     <p class="mb-6">
       <router-link class="text-blue-500 underline" to="/">
         Back to HomePage
@@ -15,7 +15,7 @@
       <label :for="option.value"> {{ option.value }}</label>
     </span>
     <br />
-    <span>Checked names: {{ checkedNames }}</span>
+    <span>Checked data: {{ checkedNames }}</span>
   </div>
 </template>
 
@@ -25,7 +25,7 @@ import { reactive, toRefs } from "vue";
 //#endregion
 
 export default {
-  name: "PageCheckedNames",
+  name: "PageCheckedData",
   setup() {
     //#region Reactive References
     const state = reactive({
@@ -56,7 +56,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.page-checked-names {
+.page-checked-data {
   text-align: center;
   padding: 70px 20px;
   max-width: 450px;
