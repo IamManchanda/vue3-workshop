@@ -31,10 +31,18 @@ const routes = [
   },
   {
     path: "/do-you-like-tacos",
-    name: "PageCheckedNames",
+    name: "PageDoYouLikeTacos",
     component: () =>
       import(
         /* webpackChunkName: "page-do-you-like-tacos" */ "../views/do-you-like-tacos.vue"
+      ),
+  },
+  {
+    path: "/iterate-an-object",
+    name: "PageIterateAnObject",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-iterate-an-object" */ "../views/iterate-an-object.vue"
       ),
   },
 ];

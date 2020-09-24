@@ -1,5 +1,10 @@
 <template>
   <div class="page-do-you-like-tacos">
+    <p class="mb-6">
+      <router-link class="text-blue-500 underline" to="/">
+        Back to HomePage
+      </router-link>
+    </p>
     <h3>Do you like tacos?</h3>
 
     <input v-model="tacos" value="yes" type="radio" id="yes" />

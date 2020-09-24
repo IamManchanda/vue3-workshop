@@ -22,6 +22,11 @@
           Do you like tacos?
         </router-link>
       </li>
+      <li>
+        <router-link class="text-blue-500 underline" to="/iterate-an-object">
+          Iterate an object
+        </router-link>
+      </li>
     </ol>
   </div>
 </template>
