@@ -29,6 +29,14 @@ const routes = [
         /* webpackChunkName: "page-checked-names" */ "../views/checked-names.vue"
       ),
   },
+  {
+    path: "/do-you-like-tacos",
+    name: "PageCheckedNames",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-do-you-like-tacos" */ "../views/do-you-like-tacos.vue"
+      ),
+  },
 ];
 
 const router = createRouter({
