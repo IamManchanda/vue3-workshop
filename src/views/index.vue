@@ -2,29 +2,9 @@
   <div class="page-index">
     <h1>Vue 3 Workshop</h1>
     <ol>
-      <li>
-        <router-link class="text-blue-500 underline" to="/counter">
-          Counter
-        </router-link>
-      </li>
-      <li>
-        <router-link class="text-blue-500 underline" to="/list-of-items">
-          List of items
-        </router-link>
-      </li>
-      <li>
-        <router-link class="text-blue-500 underline" to="/checked-names">
-          Checked Names
-        </router-link>
-      </li>
-      <li>
-        <router-link class="text-blue-500 underline" to="/do-you-like-tacos">
-          Do you like tacos? (radio example)
-        </router-link>
-      </li>
-      <li>
-        <router-link class="text-blue-500 underline" to="/iterate-an-object">
-          Iterate an object
+      <li v-for="page in pages" :key="page.id">
+        <router-link class="text-blue-500 underline" :to="page.path">
+          {{ page.title }}
         </router-link>
       </li>
     </ol>
@@ -32,8 +12,59 @@
 </template>
 
 <script>
+//#region Imports
+import { reactive, toRefs } from "vue";
+import { v4 as uuidv4 } from "uuid";
+//#endregion
+
 export default {
   name: "PageIndex",
+  setup() {
+    //#region Reactive References
+    const state = reactive({
+      pages: [
+        {
+          id: uuidv4(),
+          path: "/counter",
+          title: "Counter",
+        },
+        {
+          id: uuidv4(),
+          path: "/list-of-items",
+          title: "List of items",
+        },
+        {
+          id: uuidv4(),
+          path: "/checked-names",
+          title: "Checked Names",
+        },
+        {
+          id: uuidv4(),
+          path: "/do-you-like-tacos",
+          title: "Do you like tacos? (radio example)",
+        },
+        {
+          id: uuidv4(),
+          path: "/iterate-an-object",
+          title: "Iterate an object",
+        },
+      ],
+    });
+    //#endregion
+
+    //#region Watchers
+    //#endregion
+
+    //#region Lifecycle hooks
+    //#endregion
+
+    //#region Methods
+    //#endregion
+
+    return {
+      ...toRefs(state),
+    };
+  },
 };
 </script>
 
