@@ -4,7 +4,7 @@ import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
 
-import "./assets/styles/tailwind/index.scss";
+import "./assets/styles/index.scss";
 
 createApp(App)
   .use(store)
