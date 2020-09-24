@@ -1,15 +1,20 @@
 <template>
-  <div class="counter">
+  <div class="page-counter">
+    <p class="my-6">
+      <router-link class="text-blue-500 underline" to="/">
+        Back to HomePage
+      </router-link>
+    </p>
     <div class="button-container">
       <button
-        class="btn btn-success btn-lg"
+        class="btn btn-blue"
         :class="count >= 100 ? 'disabled' : ''"
         @click="handleIncrement"
       >
         Increment
       </button>
       <button
-        class="btn btn-danger btn-lg"
+        class="btn btn-red"
         :class="count <= 0 ? 'disabled' : ''"
         @click="handleDecrement"
       >
@@ -91,7 +96,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.counter {
+.page-counter {
   display: flex;
   flex-direction: column;
   justify-content: center;

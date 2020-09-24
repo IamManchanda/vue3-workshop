@@ -1,7 +1,4 @@
 <template>
-  <p v-if="$route.fullPath !== '/'">
-    <router-link to="/">Back to HomePage</router-link>
-  </p>
   <router-view />
 </template>
 
@@ -11,5 +8,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  padding: 1rem;
+
+  ol,
+  ul {
+    padding: 1rem;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  ul {
+    list-style: disc;
+  }
 }
 </style>
