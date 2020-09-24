@@ -1,7 +1,7 @@
 <template>
   <div class="page-index">
     <h1>Vue 3 Workshop</h1>
-    <ol>
+    <ol start="0">
       <li v-for="page in pages" :key="page.id">
         <router-link :to="page.path">
           {{ page.title }}
