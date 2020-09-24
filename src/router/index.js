@@ -69,6 +69,14 @@ const routes = [
         /* webpackChunkName: "page-cross-site-scripting" */ "../pages/cross-site-scripting.vue"
       ),
   },
+  {
+    path: "/directives-exercise-solution",
+    name: "page-directives-exercise-solution",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-directives-exercise-solution" */ "../pages/directives-exercise-solution.vue"
+      ),
+  },
 ];
 
 const router = createRouter({

@@ -41,4 +41,9 @@ export default [
     path: "cross-site-scripting",
     title: "Cross Site Scripting - XSS Software Attack (v-html)",
   },
+  {
+    id: uuidv4(),
+    path: "directives-exercise-solution",
+    title: "Directives Exercise - Solution",
+  },
 ];
