@@ -8,14 +8,14 @@
     <div class="button-container">
       <button
         class="btn btn-blue"
-        :class="count >= 100 ? 'disabled' : ''"
+        :class="count >= 100 ? 'btn-disabled' : ''"
         @click="handleIncrement"
       >
         Increment
       </button>
       <button
         class="btn btn-red"
-        :class="count <= 0 ? 'disabled' : ''"
+        :class="count <= 0 ? 'btn-disabled' : ''"
         @click="handleDecrement"
       >
         Decrement
