@@ -93,8 +93,9 @@ export default {
   button {
     border: none;
     border-radius: 1000px;
-    padding: 8px 13px;
     outline: none;
+    margin-top: 0;
+    margin-bottom: 0;
     &.inc,
     &.dec {
       background: white;
@@ -130,14 +131,19 @@ export default {
     padding-left: 3px;
     border-radius: 1000px;
     background: #fff;
+    margin-top: 20px;
     margin-left: 20px;
+  }
+
+  .submit {
+    margin-top: 10px;
   }
 
   .item {
     display: flex;
     flex-direction: column;
     width: 290px;
-    height: 470px;
+    height: 500px;
     justify-content: space-around;
     background: #eee;
     padding: 20px 10px;
@@ -148,8 +154,7 @@ export default {
     img,
     .quantity,
     .submit {
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 10px;
     }
   }
 }

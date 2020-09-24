@@ -85,6 +85,14 @@ const routes = [
         /* webpackChunkName: "page-directives-exercise-solution" */ "../pages/directives-exercise-solution.vue"
       ),
   },
+  {
+    path: "/event-handling-example",
+    name: "page-event-handling-example",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-event-handling-example" */ "../pages/event-handling-example.vue"
+      ),
+  },
 ];
 
 const router = createRouter({

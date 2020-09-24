@@ -41,4 +41,9 @@ export default [
     path: "directives-exercise-solution",
     title: "Directives Exercise - Solution",
   },
+  {
+    id: uuidv4(),
+    path: "event-handling-example",
+    title: "Event Handling Example",
+  },
 ];
