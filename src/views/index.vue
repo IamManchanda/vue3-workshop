@@ -48,6 +48,11 @@ export default {
           path: "/iterate-an-object",
           title: "Iterate an object",
         },
+        {
+          id: uuidv4(),
+          path: "favorite-kind-of-taco",
+          title: "Favorite kind of taco? (v-pre and v-once)",
+        },
       ],
     });
     //#endregion

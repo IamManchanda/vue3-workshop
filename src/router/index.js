@@ -45,6 +45,14 @@ const routes = [
         /* webpackChunkName: "page-iterate-an-object" */ "../views/iterate-an-object.vue"
       ),
   },
+  {
+    path: "/favorite-kind-of-taco",
+    name: "PageFavoriteKindOfTaco",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-favorite-kind-of-taco" */ "../views/favorite-kind-of-taco.vue"
+      ),
+  },
 ];
 
 const router = createRouter({
