@@ -61,6 +61,14 @@ const routes = [
         /* webpackChunkName: "page-backpack-shop-counter" */ "../pages/backpack-shop-counter.vue"
       ),
   },
+  {
+    path: "/cross-site-scripting",
+    name: "page-cross-site-scripting",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-cross-site-scripting" */ "../pages/cross-site-scripting.vue"
+      ),
+  },
 ];
 
 const router = createRouter({

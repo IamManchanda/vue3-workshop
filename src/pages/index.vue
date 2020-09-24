@@ -3,7 +3,7 @@
     <h1>Vue 3 Workshop</h1>
     <ol>
       <li v-for="page in pages" :key="page.id">
-        <router-link class="text-blue-500 underline" :to="page.path">
+        <router-link :to="page.path">
           {{ page.title }}
         </router-link>
       </li>
@@ -57,6 +57,11 @@ export default {
           id: uuidv4(),
           path: "backpack-shop-counter",
           title: "Backpack Shop Counter",
+        },
+        {
+          id: uuidv4(),
+          path: "cross-site-scripting",
+          title: "Cross Site Scripting - XSS Software Attack (v-html)",
         },
       ],
     });
