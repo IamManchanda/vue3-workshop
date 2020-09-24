@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
-import PageIndex from "../views/index.vue";
 
 const routes = [
   {
     path: "/",
     name: "PageIndex",
-    component: PageIndex,
+    component: () =>
+      import(/* webpackChunkName: "page-index" */ "../views/index.vue"),
   },
   {
     path: "/counter",
@@ -19,6 +19,14 @@ const routes = [
     component: () =>
       import(
         /* webpackChunkName: "page-list-of-items" */ "../views/list-of-items.vue"
+      ),
+  },
+  {
+    path: "/checked-names",
+    name: "PageCheckedNames",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-checked-names" */ "../views/checked-names.vue"
       ),
   },
 ];
