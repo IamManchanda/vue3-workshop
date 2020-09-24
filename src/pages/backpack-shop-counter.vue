@@ -4,14 +4,10 @@
       Back to HomePage
     </router-link>
   </p>
-  <link
-    href="https://fonts.googleapis.com/css?family=Montserrat|PT+Serif"
-    rel="stylesheet"
-  />
   <div class="page-backpack-shop-counter">
     <div class="item">
       <img
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/backpack.jpg"
+        src="https://vue3-workshop.s3-eu-west-1.amazonaws.com/backpack.jpg"
         width="242"
         height="300"
       />
@@ -73,14 +69,11 @@ export default {
 
 <style lang="scss" scoped>
 .page-backpack-shop-counter {
-  font-family: "PT Serif", serif;
 }
 
 .special {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-size: 12px;
+  font-size: 1rem;
 }
 
 h1,
@@ -146,7 +139,7 @@ button {
   display: flex;
   flex-direction: column;
   width: 290px;
-  height: 450px;
+  height: 470px;
   justify-content: space-around;
   background: #eee;
   padding: 20px 10px;

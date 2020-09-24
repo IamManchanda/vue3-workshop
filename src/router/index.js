@@ -8,6 +8,14 @@ const routes = [
       import(/* webpackChunkName: "page-index" */ "../pages/index.vue"),
   },
   {
+    path: "/profile-skeleton",
+    name: "page-profile-skeleton",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-profile-skeleton" */ "../pages/profile-skeleton.vue"
+      ),
+  },
+  {
     path: "/counter",
     name: "page-counter",
     component: () =>
