@@ -1,7 +1,7 @@
 <template>
   <div class="page-list-of-items">
-    <p class="mb-6">
-      <router-link class="text-blue-500 underline" to="/">
+    <p class="tw-mb-6">
+      <router-link to="/">
         Back to HomePage
       </router-link>
     </p>

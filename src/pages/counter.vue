@@ -1,20 +1,20 @@
 <template>
   <div class="page-counter">
-    <p class="mb-6">
-      <router-link class="text-blue-500 underline" to="/">
+    <p class="tw-mb-6">
+      <router-link to="/">
         Back to HomePage
       </router-link>
     </p>
     <div class="button-container">
       <button
-        class="btn btn-blue"
+        class="tw-btn tw-btn-blue"
         :class="count >= 100 ? 'btn-disabled' : ''"
         @click="handleIncrement"
       >
         Increment
       </button>
       <button
-        class="btn btn-red"
+        class="tw-btn tw-btn-red"
         :class="count <= 0 ? 'btn-disabled' : ''"
         @click="handleDecrement"
       >
