@@ -2,12 +2,14 @@
   <div class="page-index">
     <h1>Vue 3 Workshop</h1>
     <ol>
-      <li v-for="page in pages" :key="page.id">
-        <router-link
-          :to="page.path"
-          :class="page.linkClass ? page.linkClass : ''"
-        >
-          {{ page.title }}
+      <li v-for="pageNonWorkshop in pagesNonWorkshop" :key="pageNonWorkshop.id">
+        <router-link :to="pageNonWorkshop.path" class="tw-text-red-500">
+          {{ pageNonWorkshop.title }}
+        </router-link>
+      </li>
+      <li v-for="pageWorkshop in pagesWorkshop" :key="pageWorkshop.id">
+        <router-link :to="pageWorkshop.path">
+          {{ pageWorkshop.title }}
         </router-link>
       </li>
     </ol>
@@ -18,7 +20,8 @@
 //#region Imports
 import { reactive, toRefs } from "vue";
 
-import pagesFixture from "../fixtures/pages.js";
+import pagesNonWorkshopFixture from "../fixtures/pages-non-workshop.js";
+import pagesWorkshopFixture from "../fixtures/pages-workshop.js";
 //#endregion
 
 export default {
@@ -26,7 +29,8 @@ export default {
   setup() {
     //#region Reactive References
     const state = reactive({
-      pages: pagesFixture,
+      pagesNonWorkshop: pagesNonWorkshopFixture,
+      pagesWorkshop: pagesWorkshopFixture,
     });
     //#endregion
 
