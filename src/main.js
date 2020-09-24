@@ -4,11 +4,7 @@ import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
 
-import "./assets/tailwind.scss";
-import "./assets/tailwind/reset/input.scss";
-import "./assets/tailwind/reset/link.scss";
-import "./assets/tailwind/reset/list.scss";
-import "./assets/tailwind/btn.scss";
+import "./assets/styles/tailwind/index.scss";
 
 createApp(App)
   .use(store)
