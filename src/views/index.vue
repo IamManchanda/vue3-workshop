@@ -26,7 +26,7 @@ export default {
         {
           id: uuidv4(),
           path: "/counter",
-          title: "Counter",
+          title: "Counter (Non Workshop)",
         },
         {
           id: uuidv4(),
