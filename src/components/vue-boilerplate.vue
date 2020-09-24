@@ -1,5 +1,5 @@
 <template>
-  <div class="vue-boilerplate"></div>
+  <div class="component-vue-boilerplate"></div>
 </template>
 
 <script>
@@ -8,7 +8,7 @@ import { reactive, toRefs } from "vue";
 //#endregion
 
 export default {
-  name: "vue-boilerplate",
+  name: "component-vue-boilerplate",
   setup() {
     //#region Reactive References
     const state = reactive({});
@@ -31,6 +31,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.vue-boilerplate {
+.component-vue-boilerplate {
 }
 </style>

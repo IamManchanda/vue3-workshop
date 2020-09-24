@@ -29,9 +29,6 @@
       <button class="submit">Submit</button>
     </div>
   </div>
-  <pre>
-    {{ $route.name }}
-  </pre>
 </template>
 
 <script>

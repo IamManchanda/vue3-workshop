@@ -5,20 +5,20 @@ const routes = [
     path: "/",
     name: "page-index",
     component: () =>
-      import(/* webpackChunkName: "page-index" */ "../views/index.vue"),
+      import(/* webpackChunkName: "page-index" */ "../pages/index.vue"),
   },
   {
     path: "/counter",
     name: "page-counter",
     component: () =>
-      import(/* webpackChunkName: "page-counter" */ "../views/counter.vue"),
+      import(/* webpackChunkName: "page-counter" */ "../pages/counter.vue"),
   },
   {
     path: "/list-of-items",
     name: "page-list-of-items",
     component: () =>
       import(
-        /* webpackChunkName: "page-list-of-items" */ "../views/list-of-items.vue"
+        /* webpackChunkName: "page-list-of-items" */ "../pages/list-of-items.vue"
       ),
   },
   {
@@ -26,7 +26,7 @@ const routes = [
     name: "page-checked-names",
     component: () =>
       import(
-        /* webpackChunkName: "page-checked-names" */ "../views/checked-names.vue"
+        /* webpackChunkName: "page-checked-names" */ "../pages/checked-names.vue"
       ),
   },
   {
@@ -34,7 +34,7 @@ const routes = [
     name: "page-do-you-like-tacos",
     component: () =>
       import(
-        /* webpackChunkName: "page-do-you-like-tacos" */ "../views/do-you-like-tacos.vue"
+        /* webpackChunkName: "page-do-you-like-tacos" */ "../pages/do-you-like-tacos.vue"
       ),
   },
   {
@@ -42,7 +42,7 @@ const routes = [
     name: "page-iterate-an-object",
     component: () =>
       import(
-        /* webpackChunkName: "page-iterate-an-object" */ "../views/iterate-an-object.vue"
+        /* webpackChunkName: "page-iterate-an-object" */ "../pages/iterate-an-object.vue"
       ),
   },
   {
@@ -50,7 +50,7 @@ const routes = [
     name: "page-favorite-kind-of-taco",
     component: () =>
       import(
-        /* webpackChunkName: "page-favorite-kind-of-taco" */ "../views/favorite-kind-of-taco.vue"
+        /* webpackChunkName: "page-favorite-kind-of-taco" */ "../pages/favorite-kind-of-taco.vue"
       ),
   },
   {
@@ -58,7 +58,7 @@ const routes = [
     name: "page-backpack-shop-counter",
     component: () =>
       import(
-        /* webpackChunkName: "page-backpack-shop-counter" */ "../views/backpack-shop-counter.vue"
+        /* webpackChunkName: "page-backpack-shop-counter" */ "../pages/backpack-shop-counter.vue"
       ),
   },
 ];
