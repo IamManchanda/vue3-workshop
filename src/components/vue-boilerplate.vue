@@ -8,7 +8,7 @@ import { reactive, toRefs } from "vue";
 //#endregion
 
 export default {
-  name: "VueBoilerplate",
+  name: "vue-boilerplate",
   setup() {
     //#region Reactive References
     const state = reactive({});

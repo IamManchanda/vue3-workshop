@@ -17,7 +17,7 @@ import { reactive, toRefs } from "vue";
 //#endregion
 
 export default {
-  name: "PageIterateAnObject",
+  name: "page-iterate-an-object",
   setup() {
     //#region Reactive References
     const state = reactive({

@@ -19,7 +19,7 @@ import { reactive, toRefs } from "vue";
 //#endregion
 
 export default {
-  name: "PageListOfItems",
+  name: "page-list-of-items",
   setup() {
     //#region Reactive References
     const state = reactive({

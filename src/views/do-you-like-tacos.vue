@@ -24,7 +24,7 @@ import { reactive, toRefs } from "vue";
 //#endregion
 
 export default {
-  name: "PageDoYouLikeTacos",
+  name: "page-do-you-like-tacos",
   setup() {
     //#region Reactive References
     const state = reactive({

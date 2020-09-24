@@ -29,6 +29,9 @@
       <button class="submit">Submit</button>
     </div>
   </div>
+  <pre>
+    {{ $route.name }}
+  </pre>
 </template>
 
 <script>
@@ -37,7 +40,7 @@ import { reactive, toRefs } from "vue";
 //#endregion
 
 export default {
-  name: "PageBackpackShopCounter",
+  name: "page-backpack-shop-counter",
   setup() {
     //#region Reactive References
     const state = reactive({

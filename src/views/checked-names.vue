@@ -25,7 +25,7 @@ import { reactive, toRefs } from "vue";
 //#endregion
 
 export default {
-  name: "PageCheckedData",
+  name: "page-checked-names",
   setup() {
     //#region Reactive References
     const state = reactive({

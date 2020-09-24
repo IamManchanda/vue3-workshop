@@ -39,7 +39,7 @@ import {
 //#endregion
 
 export default {
-  name: "PageCounter",
+  name: "page-counter",
   setup() {
     //#region Reactive References
     const state = reactive({

@@ -3,19 +3,19 @@ import { createRouter, createWebHistory } from "vue-router";
 const routes = [
   {
     path: "/",
-    name: "PageIndex",
+    name: "page-index",
     component: () =>
       import(/* webpackChunkName: "page-index" */ "../views/index.vue"),
   },
   {
     path: "/counter",
-    name: "PageCounter",
+    name: "page-counter",
     component: () =>
       import(/* webpackChunkName: "page-counter" */ "../views/counter.vue"),
   },
   {
     path: "/list-of-items",
-    name: "PageListOfItems",
+    name: "page-list-of-items",
     component: () =>
       import(
         /* webpackChunkName: "page-list-of-items" */ "../views/list-of-items.vue"
@@ -23,7 +23,7 @@ const routes = [
   },
   {
     path: "/checked-names",
-    name: "PageCheckedNames",
+    name: "page-checked-names",
     component: () =>
       import(
         /* webpackChunkName: "page-checked-names" */ "../views/checked-names.vue"
@@ -31,7 +31,7 @@ const routes = [
   },
   {
     path: "/do-you-like-tacos",
-    name: "PageDoYouLikeTacos",
+    name: "page-do-you-like-tacos",
     component: () =>
       import(
         /* webpackChunkName: "page-do-you-like-tacos" */ "../views/do-you-like-tacos.vue"
@@ -39,7 +39,7 @@ const routes = [
   },
   {
     path: "/iterate-an-object",
-    name: "PageIterateAnObject",
+    name: "page-iterate-an-object",
     component: () =>
       import(
         /* webpackChunkName: "page-iterate-an-object" */ "../views/iterate-an-object.vue"
@@ -47,7 +47,7 @@ const routes = [
   },
   {
     path: "/favorite-kind-of-taco",
-    name: "PageFavoriteKindOfTaco",
+    name: "page-favorite-kind-of-taco",
     component: () =>
       import(
         /* webpackChunkName: "page-favorite-kind-of-taco" */ "../views/favorite-kind-of-taco.vue"
@@ -55,7 +55,7 @@ const routes = [
   },
   {
     path: "/backpack-shop-counter",
-    name: "PageBackpackShopCounter",
+    name: "page-backpack-shop-counter",
     component: () =>
       import(
         /* webpackChunkName: "page-backpack-shop-counter" */ "../views/backpack-shop-counter.vue"

@@ -18,7 +18,7 @@ import { v4 as uuidv4 } from "uuid";
 //#endregion
 
 export default {
-  name: "PageIndex",
+  name: "page-index",
   setup() {
     //#region Reactive References
     const state = reactive({
