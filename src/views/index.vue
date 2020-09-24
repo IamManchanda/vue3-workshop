@@ -53,6 +53,11 @@ export default {
           path: "favorite-kind-of-taco",
           title: "Favorite kind of taco? (v-pre and v-once)",
         },
+        {
+          id: uuidv4(),
+          path: "backpack-shop-counter",
+          title: "Backpack Shop Counter",
+        },
       ],
     });
     //#endregion

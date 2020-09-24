@@ -53,6 +53,14 @@ const routes = [
         /* webpackChunkName: "page-favorite-kind-of-taco" */ "../views/favorite-kind-of-taco.vue"
       ),
   },
+  {
+    path: "/backpack-shop-counter",
+    name: "PageBackpackShopCounter",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-backpack-shop-counter" */ "../views/backpack-shop-counter.vue"
+      ),
+  },
 ];
 
 const router = createRouter({
