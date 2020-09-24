@@ -13,6 +13,14 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "page-counter" */ "../views/counter.vue"),
   },
+  {
+    path: "/list-of-items",
+    name: "PageListOfItems",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-list-of-items" */ "../views/list-of-items.vue"
+      ),
+  },
 ];
 
 const router = createRouter({

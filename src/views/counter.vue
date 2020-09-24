@@ -1,6 +1,6 @@
 <template>
   <div class="page-counter">
-    <p class="my-6">
+    <p class="mb-6">
       <router-link class="text-blue-500 underline" to="/">
         Back to HomePage
       </router-link>

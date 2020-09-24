@@ -7,6 +7,11 @@
           Counter
         </router-link>
       </li>
+      <li>
+        <router-link class="text-blue-500 underline" to="/list-of-items">
+          List of items
+        </router-link>
+      </li>
     </ol>
   </div>
 </template>
