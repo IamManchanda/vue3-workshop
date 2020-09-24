@@ -14,13 +14,17 @@
       <div class="quantity">
         <button
           class="dec"
-          :class="[counter <= 0 ? 'cursor-not-allowed' : 'cursor-pointer']"
+          :class="[
+            counter <= 0 ? 'tw-cursor-not-allowed' : 'tw-cursor-pointer',
+          ]"
           @click="handleDecrement"
         >
           -
         </button>
         <span class="quant-text">Quantity: {{ counter }}</span>
-        <button class="inc cursor-pointer" @click="handleIncrement">+</button>
+        <button class="inc tw-cursor-pointer" @click="handleIncrement">
+          +
+        </button>
       </div>
       <button class="submit">Submit</button>
     </div>
