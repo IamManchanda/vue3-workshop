@@ -4,12 +4,14 @@ export default [
   {
     id: uuidv4(),
     path: "/profile-skeleton",
-    title: "Profile Card & Info with Skeleton (Non Workshop)",
+    title: "Profile Card & Info with Skeleton - Non Workshop",
+    linkClass: "tw-text-red-500",
   },
   {
     id: uuidv4(),
     path: "/counter",
-    title: "Counter (Non Workshop)",
+    title: "Counter - Non Workshop",
+    linkClass: "tw-text-red-500",
   },
   {
     id: uuidv4(),

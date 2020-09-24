@@ -1,12 +1,12 @@
 ol,
 ul {
-  @apply p-4;
+  @apply tw-p-4;
 }
 
 ol {
-  @apply list-decimal;
+  @apply tw-list-decimal;
 }
 
 ul {
-  @apply list-disc;
+  @apply tw-list-disc;
 }

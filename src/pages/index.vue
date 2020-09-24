@@ -3,7 +3,10 @@
     <h1>Vue 3 Workshop</h1>
     <ol>
       <li v-for="page in pages" :key="page.id">
-        <router-link :to="page.path">
+        <router-link
+          :to="page.path"
+          :class="page.linkClass ? page.linkClass : ''"
+        >
           {{ page.title }}
         </router-link>
       </li>
