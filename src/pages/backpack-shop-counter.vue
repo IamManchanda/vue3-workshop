@@ -69,89 +69,88 @@ export default {
 
 <style lang="scss" scoped>
 .page-backpack-shop-counter {
-}
-
-.special {
-  letter-spacing: 0.08em;
-  font-size: 1rem;
-}
-
-h1,
-h2,
-h3,
-li {
-  @extend .special;
-}
-
-li {
-  list-style: none;
-  display: inline-block;
-}
-
-input {
-  background: #eee;
-}
-
-button {
-  border: none;
-  border-radius: 1000px;
-  padding: 8px 13px;
-  outline: none;
-  &.inc,
-  &.dec {
-    background: white;
-    color: black;
+  .special {
+    letter-spacing: 0.08em;
+    font-size: 1rem;
   }
-  &.submit {
-    background: black;
-    color: white;
+
+  h1,
+  h2,
+  h3,
+  li {
     @extend .special;
-    margin-left: 20px;
-    padding: 12px 14px;
-    width: 240px;
-    transition: 0.25s all ease-in;
-    &:hover {
-      opacity: 0.8;
-      transition: 0.25s all ease-out;
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+  }
+
+  input {
+    background: #eee;
+  }
+
+  button {
+    border: none;
+    border-radius: 1000px;
+    padding: 8px 13px;
+    outline: none;
+    &.inc,
+    &.dec {
+      background: white;
+      color: black;
+    }
+    &.submit {
+      background: black;
+      color: white;
+      @extend .special;
+      margin-left: 20px;
+      padding: 12px 14px;
+      width: 240px;
+      transition: 0.25s all ease-in;
+      &:hover {
+        opacity: 0.8;
+        transition: 0.25s all ease-out;
+      }
     }
   }
-}
 
-.quant-text {
-  display: inline-block;
-  text-align: center;
-  width: 140px;
-  padding: 8px;
-  padding: 8px;
-  @extend .special;
-}
-
-.quantity {
-  border: 2px solid black;
-  width: 235px;
-  padding-left: 3px;
-  border-radius: 1000px;
-  background: #fff;
-  margin-left: 20px;
-}
-
-.item {
-  display: flex;
-  flex-direction: column;
-  width: 290px;
-  height: 470px;
-  justify-content: space-around;
-  background: #eee;
-  padding: 20px 10px;
-  margin: 30px;
-  img {
-    align-self: center;
+  .quant-text {
+    display: inline-block;
+    text-align: center;
+    width: 140px;
+    padding: 8px;
+    padding: 8px;
+    @extend .special;
   }
-  img,
-  .quantity,
-  .submit {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+
+  .quantity {
+    border: 2px solid black;
+    width: 235px;
+    padding-left: 3px;
+    border-radius: 1000px;
+    background: #fff;
+    margin-left: 20px;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 470px;
+    justify-content: space-around;
+    background: #eee;
+    padding: 20px 10px;
+    margin: 30px;
+    img {
+      align-self: center;
+    }
+    img,
+    .quantity,
+    .submit {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
   }
 }
 </style>

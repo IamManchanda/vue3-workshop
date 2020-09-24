@@ -48,17 +48,15 @@ export default {
   margin: 0 auto;
   display: table;
   line-height: 2em;
-}
-
-label {
-  padding-right: 10px;
-}
-
-button {
-  border: none;
-  background: orangered;
-  color: white;
-  padding: 0.5em 1em;
-  border-radius: 3px;
+  label {
+    padding-right: 10px;
+  }
+  button {
+    border: none;
+    background: orangered;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 3px;
+  }
 }
 </style>

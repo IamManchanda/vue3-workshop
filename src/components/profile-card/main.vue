@@ -43,8 +43,7 @@ export default {
         setTimeout(() => {
           resolve({
             name: "Harry Manchanda",
-            pic:
-              "https://pbs.twimg.com/profile_images/1304626535161192448/v2KU2WTu_400x400.jpg",
+            pic: "https://vue3-workshop.s3-eu-west-1.amazonaws.com/harry.jpeg",
             bio: "Software Engineer / Full-stack Web Developer.",
           });
         }, 1000);

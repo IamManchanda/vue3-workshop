@@ -1,5 +1,5 @@
 <template>
-  <div class="page-checked-data">
+  <div class="page-checked-names">
     <p class="tw-mb-6">
       <router-link to="/">
         Back to HomePage
@@ -56,7 +56,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.page-checked-data {
+.page-checked-names {
   text-align: center;
   padding: 70px 20px;
   max-width: 450px;
@@ -64,9 +64,9 @@ export default {
   margin: 0 auto;
   display: table;
   line-height: 2em;
-}
 
-label {
-  padding: 0 15px 0 5px;
+  label {
+    padding: 0 15px 0 5px;
+  }
 }
 </style>
