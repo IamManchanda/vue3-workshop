@@ -46,4 +46,9 @@ export default [
     path: "event-handling-example",
     title: "Event Handling Example",
   },
+  {
+    id: uuidv4(),
+    path: "add-comment",
+    title: "Add a comment",
+  },
 ];

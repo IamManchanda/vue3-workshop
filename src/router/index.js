@@ -93,6 +93,14 @@ const routes = [
         /* webpackChunkName: "page-event-handling-example" */ "../pages/event-handling-example.vue"
       ),
   },
+  {
+    path: "/add-comment",
+    name: "page-add-comment",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-add-comment" */ "../pages/add-comment.vue"
+      ),
+  },
 ];
 
 const router = createRouter({
