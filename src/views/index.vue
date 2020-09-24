@@ -19,7 +19,7 @@
       </li>
       <li>
         <router-link class="text-blue-500 underline" to="/do-you-like-tacos">
-          Do you like tacos?
+          Do you like tacos? (radio example)
         </router-link>
       </li>
       <li>
