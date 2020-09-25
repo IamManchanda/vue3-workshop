@@ -1,5 +1,10 @@
 <template>
   <div class="page-simple-computed-example">
+    <p class="tw-mb-6">
+      <router-link to="/">
+        Back to HomePage
+      </router-link>
+    </p>
     <h3 class="tw-mb-4">Your Name: <input v-model.lazy="userData" /></h3>
     <h2 class="tw-font-bold tw-mb-4" v-if="userData">
       Initial entry: {{ userData }}
