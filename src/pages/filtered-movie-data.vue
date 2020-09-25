@@ -5,7 +5,8 @@
         Back to HomePage
       </router-link>
     </p>
-    <h3 class="tw-text-center">
+    <h3 class="tw-mb-4">Search a title: <input v-model="filterText" /></h3>
+    <h3 class="tw-mb-4">
       Sort titles by:
       <button @click="sortLowest">Lowest Rated</button>
       <button @click="sortHighest">Highest Rated</button>
@@ -19,7 +20,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="entry in ratingsInfo" :key="entry.id">
+        <tr v-for="entry in filteredFilms" :key="entry.id">
           <td v-for="key in columns" :key="key">
             {{ entry[key] }}
           </td>
@@ -33,7 +34,7 @@
 
 <script>
 //#region Imports
-import { reactive, toRefs } from "vue";
+import { computed, reactive, toRefs } from "vue";
 import ratingsInfoFixtures from "../fixtures/ratings-info";
 //#endregion
 
@@ -44,6 +45,11 @@ export default {
     const state = reactive({
       columns: ["title", "rating"],
       ratingsInfo: ratingsInfoFixtures,
+      filterText: "",
+      filteredFilms: computed(() => {
+        let filter = new RegExp(state.filterText, "i");
+        return state.ratingsInfo.filter(el => el.title.match(filter));
+      }),
     });
     //#endregion
 

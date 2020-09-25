@@ -58,12 +58,12 @@ export default [
   },
   {
     id: uuidv4(),
-    path: "filtered-movie-data",
-    title: "Filtered Movie Data",
+    path: "simple-computed-example",
+    title: "Simple Computed Example",
   },
   {
     id: uuidv4(),
-    path: "simple-computed-example",
-    title: "Simple Computed Example",
+    path: "filtered-movie-data",
+    title: "Filtered Movie Data (search, highest, lowest)",
   },
 ];

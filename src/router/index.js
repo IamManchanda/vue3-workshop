@@ -110,19 +110,19 @@ const routes = [
       ),
   },
   {
-    path: "/filtered-movie-data",
-    name: "page-filtered-movie-data",
-    component: () =>
-      import(
-        /* webpackChunkName: "page-filtered-movie-data" */ "../pages/filtered-movie-data.vue"
-      ),
-  },
-  {
     path: "/simple-computed-example",
     name: "page-simple-computed-example",
     component: () =>
       import(
         /* webpackChunkName: "page-simple-computed-example" */ "../pages/simple-computed-example.vue"
+      ),
+  },
+  {
+    path: "/filtered-movie-data",
+    name: "page-filtered-movie-data",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-filtered-movie-data" */ "../pages/filtered-movie-data.vue"
       ),
   },
 ];
