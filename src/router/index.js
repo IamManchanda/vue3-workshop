@@ -117,6 +117,14 @@ const routes = [
         /* webpackChunkName: "page-filtered-movie-data" */ "../pages/filtered-movie-data.vue"
       ),
   },
+  {
+    path: "/simple-computed-example",
+    name: "page-simple-computed-example",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-simple-computed-example" */ "../pages/simple-computed-example.vue"
+      ),
+  },
 ];
 
 const router = createRouter({

@@ -61,4 +61,9 @@ export default [
     path: "filtered-movie-data",
     title: "Filtered Movie Data",
   },
+  {
+    id: uuidv4(),
+    path: "simple-computed-example",
+    title: "Simple Computed Example",
+  },
 ];
