@@ -133,6 +133,14 @@ const routes = [
         /* webpackChunkName: "page-methods-computed-exercise-solution" */ "../pages/methods-computed-exercise-solution.vue"
       ),
   },
+  {
+    path: "/watchers-intro",
+    name: "page-watchers-intro",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-watchers-intro" */ "../pages/watchers-intro.vue"
+      ),
+  },
 ];
 
 const router = createRouter({

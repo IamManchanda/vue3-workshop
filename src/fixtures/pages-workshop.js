@@ -71,4 +71,9 @@ export default [
     path: "methods-computed-exercise-solution",
     title: "Methods & Computed Exercise - Solution",
   },
+  {
+    id: uuidv4(),
+    path: "watchers-intro",
+    title: "Watchers Intro",
+  },
 ];
