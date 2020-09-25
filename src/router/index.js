@@ -125,6 +125,14 @@ const routes = [
         /* webpackChunkName: "page-filtered-movie-data" */ "../pages/filtered-movie-data.vue"
       ),
   },
+  {
+    path: "/methods-computed-exercise-solution",
+    name: "page-methods-computed-exercise-solution",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-methods-computed-exercise-solution" */ "../pages/methods-computed-exercise-solution.vue"
+      ),
+  },
 ];
 
 const router = createRouter({

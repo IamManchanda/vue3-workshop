@@ -66,4 +66,9 @@ export default [
     path: "filtered-movie-data",
     title: "Filtered Movie Data (search, highest, lowest)",
   },
+  {
+    id: uuidv4(),
+    path: "methods-computed-exercise-solution",
+    title: "Methods & Computed Exercise - Solution",
+  },
 ];
