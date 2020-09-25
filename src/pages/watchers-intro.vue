@@ -28,21 +28,19 @@ export default {
     //#endregion
 
     //#region Watchers
-    watch(
-      () => state.counter,
-      (newCounter, prevCounter) => {
-        console.log("The counter has changed!", {
-          newCounter,
-          prevCounter,
-        });
-      },
-    );
+    watch(() => state.counter, watchCounter);
     //#endregion
 
     //#region Lifecycle hooks
     //#endregion
 
     //#region Methods
+    function watchCounter(newCounter, prevCounter) {
+      console.log("The counter has changed!", {
+        newCounter,
+        prevCounter,
+      });
+    }
     //#endregion
 
     return {

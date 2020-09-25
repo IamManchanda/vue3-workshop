@@ -76,4 +76,9 @@ export default [
     path: "watchers-intro",
     title: "Watchers Intro",
   },
+  {
+    id: uuidv4(),
+    path: "watchers-exercise-solution",
+    title: "Watchers Exercise Solution",
+  },
 ];
