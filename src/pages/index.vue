@@ -20,8 +20,8 @@
 //#region Imports
 import { reactive, toRefs } from "vue";
 
-import pagesNonWorkshopFixture from "../fixtures/pages-non-workshop.js";
-import pagesWorkshopFixture from "../fixtures/pages-workshop.js";
+import pagesNonWorkshopFixture from "../fixtures/pages-non-workshop";
+import pagesWorkshopFixture from "../fixtures/pages-workshop";
 //#endregion
 
 export default {

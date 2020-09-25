@@ -56,4 +56,9 @@ export default [
     path: "form-submission",
     title: "Form Submission (with JSONPlaceholder)",
   },
+  {
+    id: uuidv4(),
+    path: "filtered-movie-data",
+    title: "Filtered Movie Data",
+  },
 ];

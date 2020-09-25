@@ -109,6 +109,14 @@ const routes = [
         /* webpackChunkName: "page-form-submission" */ "../pages/form-submission.vue"
       ),
   },
+  {
+    path: "/filtered-movie-data",
+    name: "page-filtered-movie-data",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-filtered-movie-data" */ "../pages/filtered-movie-data.vue"
+      ),
+  },
 ];
 
 const router = createRouter({
