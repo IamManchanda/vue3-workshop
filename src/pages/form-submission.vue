@@ -1,31 +1,34 @@
 <template>
   <div class="page-form-submission">
-    <div id="app">
-      <form @submit.prevent="submitForm">
-        <div>
-          <label for="name">Name:</label><br />
-          <input id="name" type="text" v-model="name" required />
-        </div>
-        <div>
-          <label for="email">Email:</label><br />
-          <input id="email" type="email" v-model="email" required />
-        </div>
-        <div>
-          <label for="message">Message:</label><br />
-          <textarea id="message" v-model="message" required></textarea>
-        </div>
-        <button
-          :class="[name && email && message ? activeClass : '']"
-          type="submit"
-        >
-          Submit
-        </button>
-        <div>
-          <h3>Response from server:</h3>
-          <pre>{{ response }}</pre>
-        </div>
-      </form>
-    </div>
+    <form @submit.prevent="submitForm">
+      <p class="tw-mb-6">
+        <router-link to="/">
+          Back to HomePage
+        </router-link>
+      </p>
+      <div>
+        <label for="name">Name:</label><br />
+        <input id="name" type="text" v-model="name" required />
+      </div>
+      <div>
+        <label for="email">Email:</label><br />
+        <input id="email" type="email" v-model="email" required />
+      </div>
+      <div>
+        <label for="message">Message:</label><br />
+        <textarea id="message" v-model="message" required></textarea>
+      </div>
+      <button
+        :class="[name && email && message ? activeClass : '']"
+        type="submit"
+      >
+        Submit
+      </button>
+      <div>
+        <h3>Response from server:</h3>
+        <pre>{{ response }}</pre>
+      </div>
+    </form>
   </div>
 </template>
 
