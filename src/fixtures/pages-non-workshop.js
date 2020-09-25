@@ -4,11 +4,11 @@ export default [
   {
     id: uuidv4(),
     path: "/profile-skeleton",
-    title: "Profile Card & Info with Skeleton - Non Workshop",
+    title: "Profile Card & Info with Skeleton",
   },
   {
     id: uuidv4(),
     path: "/counter",
-    title: "Counter - Non Workshop",
+    title: "Counter",
   },
 ];

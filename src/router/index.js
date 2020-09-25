@@ -101,6 +101,14 @@ const routes = [
         /* webpackChunkName: "page-add-comment" */ "../pages/add-comment.vue"
       ),
   },
+  {
+    path: "/form-submission",
+    name: "page-form-submission",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-form-submission" */ "../pages/form-submission.vue"
+      ),
+  },
 ];
 
 const router = createRouter({

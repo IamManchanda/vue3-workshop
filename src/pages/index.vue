@@ -4,7 +4,7 @@
     <ol>
       <li v-for="pageNonWorkshop in pagesNonWorkshop" :key="pageNonWorkshop.id">
         <router-link :to="pageNonWorkshop.path" class="tw-text-red-500">
-          {{ pageNonWorkshop.title }}
+          {{ pageNonWorkshop.title }} - Non Workshop
         </router-link>
       </li>
       <li v-for="pageWorkshop in pagesWorkshop" :key="pageWorkshop.id">

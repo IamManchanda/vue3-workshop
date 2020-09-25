@@ -51,4 +51,9 @@ export default [
     path: "add-comment",
     title: "Add a comment",
   },
+  {
+    id: uuidv4(),
+    path: "form-submission",
+    title: "Form Submission (with JSONPlaceholder)",
+  },
 ];
