@@ -2,7 +2,7 @@
   <div class="page-index">
     <h1 class="tw-mb-2 tw-text-3xl">Vue 3 Workshop</h1>
     <p>
-      The focus of this app's example pages/components has been on Functionality
+      The focus of this app's sample pages/components has been on Functionality
       and not on mobile responsive-ness.
     </p>
     <p class="tw-my-2">
