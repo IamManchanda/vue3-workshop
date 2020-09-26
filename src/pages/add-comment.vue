@@ -4,6 +4,10 @@
       <router-link to="/" class="tw-text-white">
         Back to HomePage
       </router-link>
+      |
+      <a href="https://codepen.io/IamManchanda/full/dyMrdJr" target="_blank">
+        Improved example
+      </a>
     </p>
     <img
       src="https://vue3-workshop.s3-eu-west-1.amazonaws.com/vue-post-photo.jpg"
