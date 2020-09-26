@@ -158,14 +158,6 @@ const routes = [
       ),
   },
   {
-    path: "/modal-slot-example",
-    name: "page-modal-slot-example",
-    component: () =>
-      import(
-        /* webpackChunkName: "page-modal-slot-example" */ "../pages/modal-slot-example.vue"
-      ),
-  },
-  {
     path: "/dynamic-components-keep-alive",
     name: "page-dynamic-components-keep-alive",
     component: () =>
@@ -187,6 +179,14 @@ const routes = [
     component: () =>
       import(
         /* webpackChunkName: "page-lifecycle-hooks-with-child" */ "../pages/lifecycle-hooks-with-child.vue"
+      ),
+  },
+  {
+    path: "/modal-slot-transition-teleport-example",
+    name: "page-modal-slot-transition-teleport-example",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-modal-slot-transition-teleport-example" */ "../pages/modal-slot-transition-teleport-example.vue"
       ),
   },
 ];

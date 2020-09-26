@@ -1,5 +1,8 @@
 <template>
-  <div class="page-modal-slot-example">
+  <div
+    class="page-modal-slot-transition-teleport-example"
+    :class="[isShowing ? blurClass : '', bkClass]"
+  >
     <p class="tw-mb-6">
       <router-link to="/">
         Back to HomePage
@@ -11,12 +14,16 @@
       <span v-else>Show child</span>
     </button>
 
-    <child-modal v-if="isShowing">
-      <h2>Here I am!</h2>
-      <button @click="handleToggleShow">
-        Close
-      </button>
-    </child-modal>
+    <transition name="fade">
+      <teleport to="body">
+        <child-modal v-if="isShowing">
+          <h2>Here I am!</h2>
+          <button class="tw-btn tw-btn-blue" @click="handleToggleShow">
+            Close Modal
+          </button>
+        </child-modal>
+      </teleport>
+    </transition>
   </div>
 </template>
 
@@ -28,7 +35,7 @@ import ChildModal from "../components/child-modal";
 //#endregion
 
 export default {
-  name: "page-modal-slot-example",
+  name: "page-modal-slot-transition-teleport-example",
   components: {
     ChildModal,
   },
@@ -36,6 +43,8 @@ export default {
     //#region Reactive References
     const state = reactive({
       isShowing: false,
+      bkClass: "bk",
+      blurClass: "blur",
     });
     //#endregion
 
@@ -60,7 +69,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.page-modal-slot-example {
+.page-modal-slot-transition-teleport-example {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +78,6 @@ export default {
   max-width: 370px;
 
   button {
-    font-family: "Roboto Mono";
     border: 2px solid black;
     background: white;
     padding: 10px 15px;
@@ -82,5 +90,27 @@ export default {
   h4 {
     margin: 0 0 15px;
   }
+}
+
+/**
+   * Animation Styles
+  **/
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease-out;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.bk {
+  transition: all 0.05s ease-out;
+}
+
+.blur {
+  filter: blur(1px);
+  opacity: 0.4;
 }
 </style>

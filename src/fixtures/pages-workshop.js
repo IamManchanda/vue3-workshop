@@ -103,11 +103,6 @@ export default [
   },
   {
     id: uuidv4(),
-    path: "modal-slot-example",
-    title: "Modal Slot Example",
-  },
-  {
-    id: uuidv4(),
     href: "https://codepen.io/IamManchanda/full/bGpZMvJ",
     title: "Wine Label Maker",
   },
@@ -125,5 +120,15 @@ export default [
     id: uuidv4(),
     path: "lifecycle-hooks-with-child",
     title: "Lifecycle Hooks (shown with child component)",
+  },
+  {
+    id: uuidv4(),
+    href: "https://codepen.io/IamManchanda/full/JjXzmPp",
+    title: "Day & Night: CSS Transitions & CSS Animations explained",
+  },
+  {
+    id: uuidv4(),
+    path: "modal-slot-transition-teleport-example",
+    title: "Modal with Slot, Transition & Teleport Example",
   },
 ];

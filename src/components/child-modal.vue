@@ -40,7 +40,10 @@ export default {
     background: cyan;
     color: black;
     padding: 20px;
-    margin-top: -80px;
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    margin-left: 80px;
     width: 250px;
     border: 2px solid black;
   }
