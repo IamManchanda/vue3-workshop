@@ -1,8 +1,18 @@
 <template>
   <div class="page-index">
-    <h1 class="tw-text-2xl">Vue 3 Workshop</h1>
-    <p>The one marked with green are external codepen/github links.</p>
+    <h1 class="tw-mb-2 tw-text-3xl">Vue 3 Workshop</h1>
+    <p>
+      The focus of this app's example pages/components has been on Functionality
+      and not on mobile responsive-ness.
+    </p>
     <p class="tw-my-2">
+      Thus this app works best on <strong>Modern Desktop Browsers</strong>.
+      Please use the same for best use!
+    </p>
+    <p class="tw-my-2">
+      The Text marked with green are external codepen/github links.
+    </p>
+    <p class="tw-mt-2 tw-mb-4">
       Code here:
       <a
         href="https://github.com/IamManchanda/vue3-workshop"
@@ -12,6 +22,8 @@
         IamManchanda/vue3-workshop
       </a>
     </p>
+    <hr />
+    <h2 class="tw-mt-4 tw-text-2xl">Examples:</h2>
     <ol>
       <li v-for="pageNonWorkshop in pagesNonWorkshop" :key="pageNonWorkshop.id">
         <template v-if="pageNonWorkshop.href">
