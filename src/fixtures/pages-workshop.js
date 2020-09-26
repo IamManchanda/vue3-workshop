@@ -111,4 +111,9 @@ export default [
     href: "https://codepen.io/IamManchanda/full/bGpZMvJ",
     title: "Wine Label Maker",
   },
+  {
+    id: uuidv4(),
+    path: "dynamic-components-keep-alive",
+    title: "Dynamic components with keep-alive",
+  },
 ];

@@ -165,6 +165,14 @@ const routes = [
         /* webpackChunkName: "page-modal-slot-example" */ "../pages/modal-slot-example.vue"
       ),
   },
+  {
+    path: "/dynamic-components-keep-alive",
+    name: "page-dynamic-components-keep-alive",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-dynamic-components-keep-alive" */ "../pages/dynamic-components-keep-alive.vue"
+      ),
+  },
 ];
 
 const router = createRouter({
