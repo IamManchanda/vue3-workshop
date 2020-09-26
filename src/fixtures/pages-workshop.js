@@ -106,4 +106,9 @@ export default [
     path: "modal-slot-example",
     title: "Modal Slot Example",
   },
+  {
+    id: uuidv4(),
+    href: "https://codepen.io/IamManchanda/full/bGpZMvJ",
+    title: "Wine Label Maker",
+  },
 ];
