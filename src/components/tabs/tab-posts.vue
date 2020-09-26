@@ -10,7 +10,9 @@
           }"
           @click="selectedPost = post"
         >
-          <span class="tw-text-red-500">{{ post.title }}</span>
+          <span class="tw-text-red-500 tw-cursor-pointer">
+            {{ post.title }}
+          </span>
         </li>
       </ul>
       <div>
