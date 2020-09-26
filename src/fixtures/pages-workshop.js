@@ -78,6 +78,11 @@ export default [
   },
   {
     id: uuidv4(),
+    href: "https://codepen.io/IamManchanda/full/KKzEzWW",
+    title: "Watchers - Vue Infinite Scroll",
+  },
+  {
+    id: uuidv4(),
     path: "watchers-exercise-solution",
     title: "Watchers Exercise Solution",
   },
@@ -90,5 +95,10 @@ export default [
     id: uuidv4(),
     href: "https://codepen.io/IamManchanda/full/dyMrdgE",
     title: "Ball Bounce Animation (emitting events from child)",
+  },
+  {
+    id: uuidv4(),
+    href: "https://codepen.io/IamManchanda/full/vYGPpZR",
+    title: "Time Comparison",
   },
 ];
