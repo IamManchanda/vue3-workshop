@@ -116,4 +116,9 @@ export default [
     path: "dynamic-components-keep-alive",
     title: "Dynamic components with keep-alive",
   },
+  {
+    id: uuidv4(),
+    path: "components-exercise-solution",
+    title: "Components Exercise Solution",
+  },
 ];

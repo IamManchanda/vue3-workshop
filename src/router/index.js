@@ -173,6 +173,14 @@ const routes = [
         /* webpackChunkName: "page-dynamic-components-keep-alive" */ "../pages/dynamic-components-keep-alive.vue"
       ),
   },
+  {
+    path: "/components-exercise-solution",
+    name: "page-components-exercise-solution",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-components-exercise-solution" */ "../pages/components-exercise-solution.vue"
+      ),
+  },
 ];
 
 const router = createRouter({
