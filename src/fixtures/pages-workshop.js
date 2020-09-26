@@ -121,4 +121,9 @@ export default [
     path: "components-exercise-solution",
     title: "Components Exercise Solution",
   },
+  {
+    id: uuidv4(),
+    path: "lifecycle-hooks-with-child",
+    title: "Lifecycle Hooks (shown with child component)",
+  },
 ];

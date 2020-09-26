@@ -181,6 +181,14 @@ const routes = [
         /* webpackChunkName: "page-components-exercise-solution" */ "../pages/components-exercise-solution.vue"
       ),
   },
+  {
+    path: "/lifecycle-hooks-with-child",
+    name: "page-lifecycle-hooks-with-child",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-lifecycle-hooks-with-child" */ "../pages/lifecycle-hooks-with-child.vue"
+      ),
+  },
 ];
 
 const router = createRouter({
