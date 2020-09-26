@@ -36,16 +36,18 @@ export default {
 
 <style lang="scss" scoped>
 .component-child-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   .modal {
-    background: cyan;
+    background: SkyBlue;
     color: black;
     padding: 20px;
-    position: absolute;
-    top: 0;
-    margin-top: 50px;
-    margin-left: 80px;
-    width: 250px;
+    max-width: 500px;
+    margin: 1rem;
     border: 2px solid black;
+    border-radius: 4px;
   }
 }
 </style>

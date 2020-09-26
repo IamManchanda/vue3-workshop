@@ -18,9 +18,20 @@
       <teleport to="body">
         <child-modal v-if="isShowing">
           <h2>Here I am!</h2>
-          <button class="tw-btn tw-btn-blue" @click="handleToggleShow">
-            Close Modal
-          </button>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
+            odit eum accusantium magnam saepe aspernatur ducimus iste suscipit
+            architecto cupiditate repellendus ipsam itaque alias rem pariatur
+            deserunt eveniet, nulla consequatur?
+          </p>
+          <div class="tw-flex tw-justify-center">
+            <button
+              class="tw-btn tw-btn-red tw-mt-6 tw-mb-4"
+              @click="handleToggleShow"
+            >
+              Close to hide Child
+            </button>
+          </div>
         </child-modal>
       </teleport>
     </transition>
@@ -75,13 +86,13 @@ export default {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  max-width: 370px;
 
   button {
+    max-width: 370px;
     border: 2px solid black;
     background: white;
     padding: 10px 15px;
-    margin: 0 10px;
+    margin: 20px 10px 0;
     outline: 0;
     width: 60%;
     cursor: pointer;
