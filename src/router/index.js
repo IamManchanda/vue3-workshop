@@ -157,6 +157,14 @@ const routes = [
         /* webpackChunkName: "page-props-or-no-props" */ "../pages/props-or-no-props.vue"
       ),
   },
+  {
+    path: "/modal-slot-example",
+    name: "page-modal-slot-example",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-modal-slot-example" */ "../pages/modal-slot-example.vue"
+      ),
+  },
 ];
 
 const router = createRouter({

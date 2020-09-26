@@ -101,4 +101,9 @@ export default [
     href: "https://codepen.io/IamManchanda/full/vYGPpZR",
     title: "Time Comparison",
   },
+  {
+    id: uuidv4(),
+    path: "modal-slot-example",
+    title: "Modal Slot Example",
+  },
 ];
