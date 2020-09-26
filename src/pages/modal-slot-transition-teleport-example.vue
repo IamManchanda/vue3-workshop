@@ -8,7 +8,7 @@
         Back to HomePage
       </router-link>
     </p>
-    <h3>Let's trigger this here modal!</h3>
+    <h3>Let's trigger this modal!</h3>
     <button @click="handleToggleShow">
       <span v-if="isShowing">Hide child</span>
       <span v-else>Show child</span>
@@ -88,7 +88,7 @@ export default {
   text-align: center;
 
   button {
-    max-width: 370px;
+    max-width: 220px;
     border: 2px solid black;
     background: white;
     padding: 10px 15px;
