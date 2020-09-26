@@ -81,4 +81,9 @@ export default [
     path: "watchers-exercise-solution",
     title: "Watchers Exercise Solution",
   },
+  {
+    id: uuidv4(),
+    path: "props-or-no-props",
+    title: "Props or no Props (with Child Counter)",
+  },
 ];
