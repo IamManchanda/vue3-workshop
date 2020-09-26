@@ -3,6 +3,10 @@
     <router-link to="/">
       Back to HomePage
     </router-link>
+    |
+    <a href="https://codepen.io/IamManchanda/full/LYNaQdq" target="_blank">
+      Improved example
+    </a>
   </p>
   <div class="page-backpack-shop-counter">
     <div class="item">
