@@ -1,7 +1,17 @@
 <template>
   <div class="page-index">
     <h1 class="tw-text-2xl">Vue 3 Workshop</h1>
-    <p>The one marked with green are external codepen links.</p>
+    <p>The one marked with green are external codepen/github links.</p>
+    <p class="tw-my-2">
+      Code here:
+      <a
+        href="https://github.com/IamManchanda/vue3-workshop"
+        target="_blank"
+        class="tw-text-green-500 tw-font-bold"
+      >
+        IamManchanda/vue3-workshop
+      </a>
+    </p>
     <ol>
       <li v-for="pageNonWorkshop in pagesNonWorkshop" :key="pageNonWorkshop.id">
         <template v-if="pageNonWorkshop.href">
