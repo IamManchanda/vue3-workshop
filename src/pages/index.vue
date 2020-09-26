@@ -1,16 +1,39 @@
 <template>
   <div class="page-index">
-    <h1>Vue 3 Workshop</h1>
+    <h1 class="tw-text-2xl">Vue 3 Workshop</h1>
+    <p>The one marked with green are external codepen links.</p>
     <ol>
       <li v-for="pageNonWorkshop in pagesNonWorkshop" :key="pageNonWorkshop.id">
-        <router-link :to="pageNonWorkshop.path" class="tw-text-red-500">
-          {{ pageNonWorkshop.title }} - Non Workshop
-        </router-link>
+        <template v-if="pageNonWorkshop.href">
+          <a
+            :href="pageNonWorkshop.href"
+            target="_blank"
+            class="tw-text-green-500 tw-font-bold"
+          >
+            {{ pageNonWorkshop.title }} - Non Workshop
+          </a>
+        </template>
+        <template v-else>
+          <router-link :to="pageNonWorkshop.path">
+            {{ pageNonWorkshop.title }} - Non Workshop
+          </router-link>
+        </template>
       </li>
       <li v-for="pageWorkshop in pagesWorkshop" :key="pageWorkshop.id">
-        <router-link :to="pageWorkshop.path">
-          {{ pageWorkshop.title }}
-        </router-link>
+        <template v-if="pageWorkshop.href">
+          <a
+            :href="pageWorkshop.href"
+            target="_blank"
+            class="tw-text-green-500 tw-font-bold"
+          >
+            {{ pageWorkshop.title }}
+          </a>
+        </template>
+        <template v-else>
+          <router-link :to="pageWorkshop.path">
+            {{ pageWorkshop.title }}
+          </router-link>
+        </template>
       </li>
     </ol>
   </div>

@@ -86,4 +86,9 @@ export default [
     path: "props-or-no-props",
     title: "Props or no Props (with Child Counter)",
   },
+  {
+    id: uuidv4(),
+    href: "https://codepen.io/IamManchanda/full/dyMrdgE",
+    title: "Ball Bounce Animation (emitting events from child)",
+  },
 ];
