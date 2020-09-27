@@ -146,4 +146,9 @@ export default [
     path: "transition-modes-flip-cards",
     title: "Transition Modes Flip Cards",
   },
+  {
+    id: uuidv4(),
+    href: "https://codepen.io/IamManchanda/full/eYZXobd",
+    title: "Book Content Typer Animation",
+  },
 ];
