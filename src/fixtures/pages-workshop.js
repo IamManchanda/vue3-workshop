@@ -151,4 +151,9 @@ export default [
     href: "https://codepen.io/IamManchanda/full/eYZXobd",
     title: "Book Content Typer Animation",
   },
+  {
+    id: uuidv4(),
+    href: "https://pagetransitions.netlify.app/",
+    title: "Page Transitions Travel App",
+  },
 ];
