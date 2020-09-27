@@ -141,4 +141,9 @@ export default [
     path: "interpolation-with-style-bindings",
     title: "Interpolation with Style Bindings",
   },
+  {
+    id: uuidv4(),
+    path: "transition-modes-flip-cards",
+    title: "Transition Modes Flip Cards",
+  },
 ];

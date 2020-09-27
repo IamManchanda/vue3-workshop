@@ -205,6 +205,14 @@ const routes = [
         /* webpackChunkName: "page-interpolation-with-style-bindings" */ "../pages/interpolation-with-style-bindings.vue"
       ),
   },
+  {
+    path: "/transition-modes-flip-cards",
+    name: "page-transition-modes-flip-cards",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-transition-modes-flip-cards" */ "../pages/transition-modes-flip-cards.vue"
+      ),
+  },
 ];
 
 const router = createRouter({
