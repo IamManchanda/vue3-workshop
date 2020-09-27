@@ -189,6 +189,14 @@ const routes = [
         /* webpackChunkName: "page-modal-slot-transition-teleport-example" */ "../pages/modal-slot-transition-teleport-example.vue"
       ),
   },
+  {
+    path: "/ball-bouncing-transition-animation",
+    name: "page-ball-bouncing-transition-animation",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-ball-bouncing-transition-animation" */ "../pages/ball-bouncing-transition-animation.vue"
+      ),
+  },
 ];
 
 const router = createRouter({

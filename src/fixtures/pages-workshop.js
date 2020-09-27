@@ -131,4 +131,9 @@ export default [
     path: "modal-slot-transition-teleport-example",
     title: "Modal with Slot, Transition & Teleport Example",
   },
+  {
+    id: uuidv4(),
+    path: "ball-bouncing-transition-animation",
+    title: "Ball Bouncing using Vue Transition & CSS Animation",
+  },
 ];
