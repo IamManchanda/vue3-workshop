@@ -1,20 +1,16 @@
 <template>
-  <div class="page-event-handling-example">
+  <div class="page-interpolation-with-style-bindings">
     <div
       @mousemove="handleXCoordinate"
       :style="{ backgroundColor: `hsl(${x}, 80%, 85%)` }"
-      class="box"
+      class="move-area"
     >
       <p class="tw-mb-6">
         <router-link to="/" class="tw-text-black">
           Back to HomePage
         </router-link>
       </p>
-      <p>
-        <button @click="handleIncrement">+</button>
-        <span>{{ counter }}</span>
-        <button @click="handleDecrement">-</button>
-      </p>
+      <h3>Move your mouse across the screen...</h3>
       <p>x axis: {{ x }}</p>
       <p>y axis: {{ y }}</p>
     </div>
@@ -27,11 +23,10 @@ import { reactive, toRefs } from "vue";
 //#endregion
 
 export default {
-  name: "page-event-handling-example",
+  name: "page-interpolation-with-style-bindings",
   setup() {
     //#region Reactive References
     const state = reactive({
-      counter: 0,
       x: 0,
       y: 0,
     });
@@ -44,12 +39,6 @@ export default {
     //#endregion
 
     //#region Methods
-    function handleIncrement() {
-      state.counter++;
-    }
-    function handleDecrement() {
-      state.counter--;
-    }
     function handleXCoordinate(event) {
       state.x = event.clientX;
       state.y = event.clientY;
@@ -58,8 +47,6 @@ export default {
 
     return {
       ...toRefs(state),
-      handleIncrement,
-      handleDecrement,
       handleXCoordinate,
     };
   },
@@ -67,25 +54,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.page-event-handling-example {
+.page-interpolation-with-style-bindings {
   width: 100vw;
   height: 100vh;
-  padding: 15vmin;
-  font-size: 30px;
-  transition: 0.2s background-color ease;
 
-  .box {
+  .move-area {
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 10vmin;
-
-    span {
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
+    padding: 6vmin;
+    transition: 0.2s background-color ease;
   }
 }
 </style>

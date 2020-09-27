@@ -197,6 +197,14 @@ const routes = [
         /* webpackChunkName: "page-ball-bouncing-transition-animation" */ "../pages/ball-bouncing-transition-animation.vue"
       ),
   },
+  {
+    path: "/interpolation-with-style-bindings",
+    name: "page-interpolation-with-style-bindings",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-interpolation-with-style-bindings" */ "../pages/interpolation-with-style-bindings.vue"
+      ),
+  },
 ];
 
 const router = createRouter({

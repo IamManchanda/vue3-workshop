@@ -136,4 +136,9 @@ export default [
     path: "ball-bouncing-transition-animation",
     title: "Ball Bouncing using Vue Transition & CSS Animation",
   },
+  {
+    id: uuidv4(),
+    path: "interpolation-with-style-bindings",
+    title: "Interpolation with Style Bindings",
+  },
 ];
