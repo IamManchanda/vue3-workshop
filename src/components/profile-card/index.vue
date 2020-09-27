@@ -13,8 +13,6 @@
 
 <script>
 //#region Imports
-import { reactive, toRefs } from "vue";
-
 import ProfileCardMain from "./main";
 import ProfileCardSkeleton from "./skeleton";
 //#endregion
@@ -24,24 +22,6 @@ export default {
   components: {
     ProfileCardMain,
     ProfileCardSkeleton,
-  },
-  setup() {
-    //#region Reactive References
-    const state = reactive({});
-    //#endregion
-
-    //#region Watchers
-    //#endregion
-
-    //#region Lifecycle hooks
-    //#endregion
-
-    //#region Methods
-    //#endregion
-
-    return {
-      ...toRefs(state),
-    };
   },
 };
 </script>

@@ -5,10 +5,6 @@
 </template>
 
 <script>
-//#region Imports
-import { reactive, toRefs } from "vue";
-//#endregion
-
 export default {
   name: "component-child-counter",
   props: {
@@ -16,24 +12,6 @@ export default {
       type: Number,
       required: true,
     },
-  },
-  setup() {
-    //#region Reactive References
-    const state = reactive({});
-    //#endregion
-
-    //#region Watchers
-    //#endregion
-
-    //#region Lifecycle hooks
-    //#endregion
-
-    //#region Methods
-    //#endregion
-
-    return {
-      ...toRefs(state),
-    };
   },
 };
 </script>
