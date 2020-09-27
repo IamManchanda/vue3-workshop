@@ -20,7 +20,7 @@
 
 <script>
 //#region Imports
-import { reactive, toRefs } from "vue";
+import { reactive, toRefs, watch } from "vue";
 //#endregion
 
 export default {
@@ -37,6 +37,7 @@ export default {
     //#endregion
 
     //#region Watchers
+    watch(() => state.numItems, watchNumItems);
     //#endregion
 
     //#region Lifecycle hooks
@@ -45,6 +46,13 @@ export default {
     //#region Methods
     function addItems() {
       state.numItems += 1;
+    }
+
+    function watchNumItems(newNumItems, oldNumItems) {
+      console.log("numItems has changed", {
+        newNumItems,
+        oldNumItems,
+      });
     }
     //#endregion
 
