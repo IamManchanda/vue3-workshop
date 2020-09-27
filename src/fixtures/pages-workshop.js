@@ -48,6 +48,11 @@ export default [
   },
   {
     id: uuidv4(),
+    path: "order-food-from-restaurant",
+    title: "Order Food from Restaurant",
+  },
+  {
+    id: uuidv4(),
     path: "add-comment",
     title: "Add a comment",
   },

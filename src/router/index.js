@@ -94,6 +94,14 @@ const routes = [
       ),
   },
   {
+    path: "/order-food-from-restaurant",
+    name: "page-order-food-from-restaurant",
+    component: () =>
+      import(
+        /* webpackChunkName: "page-order-food-from-restaurant" */ "../pages/order-food-from-restaurant.vue"
+      ),
+  },
+  {
     path: "/add-comment",
     name: "page-add-comment",
     component: () =>
