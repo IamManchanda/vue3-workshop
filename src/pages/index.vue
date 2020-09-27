@@ -1,7 +1,26 @@
 <template>
   <div class="page-index">
     <h1 class="tw-mb-2 tw-text-3xl">Vue 3 Workshop</h1>
-    <p>
+    <h2>
+      Studied by:
+      <a
+        href="https://github.com/IamManchanda"
+        target="_blank"
+        class="tw-text-green-500 tw-font-bold"
+      >
+        Harry Manchanda
+      </a>
+    </h2>
+    <h2>
+      Taught by:
+      <a
+        href="https://github.com/sdras"
+        target="_blank"
+        class="tw-text-green-500 tw-font-bold"
+        >Sarah Drasner</a
+      >
+    </h2>
+    <p class="tw-my-2">
       The focus of this app's sample pages/components has been on Functionality
       and not on mobile responsive-ness.
     </p>
