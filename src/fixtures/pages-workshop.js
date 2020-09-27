@@ -161,4 +161,9 @@ export default [
     href: "https://pagetransitions.netlify.app/",
     title: "Page Transitions Travel App",
   },
+  {
+    id: uuidv4(),
+    href: "https://codepen.io/IamManchanda/full/xxVBoZe",
+    title: "Custom directives: Dynamic Arguments + Dynamic Binding",
+  },
 ];
