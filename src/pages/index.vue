@@ -15,11 +15,11 @@
     <p class="tw-mt-2 tw-mb-4">
       Code here:
       <a
-        href="https://github.com/IamManchanda/vue3-workshop"
+        href="https://github.com/IamManchanda/vue3-workshop/tree/master/src"
         target="_blank"
         class="tw-text-green-500 tw-font-bold"
       >
-        IamManchanda/vue3-workshop
+        Github/IamManchanda/vue3-workshop/src
       </a>
     </p>
     <hr />
