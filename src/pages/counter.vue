@@ -8,14 +8,14 @@
     <div class="button-container">
       <button
         class="tw-btn tw-btn-blue"
-        :class="count >= 100 ? 'btn-disabled' : ''"
+        :class="count >= 100 ? 'tw-btn-disabled' : ''"
         @click="handleIncrement"
       >
         Increment
       </button>
       <button
         class="tw-btn tw-btn-red"
-        :class="count <= 0 ? 'btn-disabled' : ''"
+        :class="count <= 0 ? 'tw-btn-disabled' : ''"
         @click="handleDecrement"
       >
         Decrement
